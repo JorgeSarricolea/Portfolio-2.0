@@ -1,35 +1,48 @@
-body {
+#my-body {
     background-color: #E8DAFF;
     font-family: 'ExtraLight 200', sans-serif;
 }
 
 /* Navbar */
 
-.navbar-expand-lg {
+.navbar-container {
     display: flex;
     align-items: center;
     flex-direction: row;
+    justify-content: space-between;
     position: absolute;
+    top: 20px;
+    right: 20px;
+    left: 20px;
     width: 80%;
+    margin: 0 auto;
     background-color: rgba(116, 109, 128, 0.2);
     border-radius: 10px;
-    top: 60px;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    padding: 10px 10px;
-    gap: 200px;
+    padding: 10px 20px;
 }
 
 .navbar-brand img {
     max-height: 50px;
 }
 
-.navbar-nav {
+.navbar-items {
     display: flex;
     justify-content: center;
-    padding: 0;
+    align-items: center;
     list-style: none;
     width: max-content;
+    margin: 0;
+    padding: 0;
+    gap: 20px;
+
+}
+
+.navbar-toggler {
+    display: none;
+}
+
+.navbar-toggler:hover {
+    color: #B98EFF;
 }
 
 .navbar-nav li {
@@ -54,7 +67,6 @@ body {
     font-weight: bold;
 }
 
-
 /* Hero Section */
 
 .hero-section {
@@ -65,7 +77,11 @@ body {
     align-items: center;
     height: 40%;
     width: 80%;
-    margin: 125px auto 0;
+    margin: 105px auto 0;
+}
+
+.hero-container {
+    margin: 0 auto;
 }
 
 .row {
@@ -73,6 +89,7 @@ body {
     justify-content: space-between;
     align-items: center;
     gap: 40px;
+    margin: 0;
 }
 
 .whoami {
@@ -150,4 +167,78 @@ body {
 .social-links a:hover {
     font-size: 30px;
     color: #5D4780;
+}
+
+/* Mobile */
+
+@media only screen and (max-width: 768px) {
+
+    .navbar-items {
+        display: none;
+    }
+
+    .navbar-container {
+        width: 90%;
+    }
+
+    .navbar-toggler {
+        display: block;
+        background-color: transparent;
+        border: none;
+        font-size: 1.5rem;
+        color: #5D4780;
+        cursor: pointer;
+    }
+
+    .navbar-toggler:focus {
+        outline: none;
+    }
+
+    .hero-section {
+        width: 90%;
+        margin-bottom: 20px;
+    }
+
+    .hero-container {
+        width: 100%;
+        margin: 0 auto;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .whoami {
+        height: 120px;
+    }
+
+    .row h1 {
+        font-size: 42px;
+    }
+
+    .row img {
+        border-radius: 25px;
+        width: 100%;
+    }
+
+    .row {
+        margin: 0;
+    }
+
+    .col-lg-5 {
+        order: -1;
+    }
+
+    .btn-hire {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+
+    .btn-services {
+        width: 100%;
+        margin-bottom: 40px;
+    }
+
+    .social-links {
+        width: 80%;
+        margin: 0 auto;
+    }
 }

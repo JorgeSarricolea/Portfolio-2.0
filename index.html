@@ -23,15 +23,18 @@
 
     <title>Jorge Sarricolea | Home</title>
 </head>
-<body>
+<body id="my-body">
     <!-- Navbar -->
     <header>
 		<nav class="navbar">
-			<div class="navbar-expand-lg">
+			<div class="navbar-container">
 				<a class="navbar-brand" href="index.html">
                     <img src="img/logotype.png" alt="Logo">
                 </a>
-				<ul class="navbar-nav">
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <i class="fa-solid fa-bars"></i>
+                </button>
+				<ul class="navbar-items">
 					<li class="nav-item active"><a class="nav-link" href="index.html">Home</a></li>
 					<li class="nav-item"><a class="nav-link" href="#">About</a></li>
 					<li class="nav-item"><a class="nav-link" href="#">Services</a></li>
@@ -45,7 +48,7 @@
 
     <!-- Hero Section -->
     <section class="hero-section">
-    <div class="container-hero">
+    <div class="hero-container">
         <div class="row">
             <div class="col-lg-6">
                 <div class="whoami">
