@@ -1,11 +1,11 @@
 body {
     background-color: #E8DAFF;
-    font-family: 'Poppins', sans-serif;
+    font-family: 'ExtraLight 200', sans-serif;
     }
 
 /* Navbar */
 
-.container {
+.container-navbar {
     display: flex;
     padding: 10px 20px;
     justify-content: space-between;
@@ -30,6 +30,11 @@ body {
     max-width: 100%;
 }
 
+.nav-item.active a {
+    color: #5D4780;
+    font-weight: bold;
+}
+
 ul.navbar-nav {
     display: flex;
     justify-content: flex-end;
@@ -38,7 +43,7 @@ ul.navbar-nav {
 }
 
 ul.navbar-nav li.nav-item a.nav-link {
-    color: #333;
+    color: #5D4780;
     text-decoration: none;
     transition: all 0.3s ease-in-out;
 }
@@ -46,4 +51,79 @@ ul.navbar-nav li.nav-item a.nav-link {
 ul.navbar-nav li.nav-item a.nav-link:hover {
     color: #5D4780;
     font-weight: bold;
+}
+
+/* Hero Section */
+
+.hero-section {
+    background-color: rgba(116, 109, 128, 0.2);
+    border-radius: 25px;
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    height: 40%;
+    width: 80%;
+    margin: 125px auto 0;
+}
+
+.row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.row h1 {
+    font-size: 72px;
+    font-weight: lighter;
+    color: #5D4780;
+}
+
+.row span {
+    font-weight: bold;
+}
+
+.row h2 {
+    font-size: 18px;
+    font-weight: lighter;
+    color: #5D4780;
+}
+
+.row img {
+    border-radius: 25px;
+    float: right;
+    margin-left: 40px;
+}
+
+.main-btns {
+    margin-top: 40px;
+}
+
+.btn-hire {
+    border-radius: 10px;
+    background-color: #B98EFF;
+    border-color: #B98EFF;
+    color: #5D4780;
+    padding: 10px 20px;
+    margin-right: 20px;
+}
+
+.btn-hire:hover {
+    background-color: #5D4780;
+    font-weight: bold;
+    color: #E8DAFF;
+    border-color: #5D4780;
+}
+
+.btn-services {
+    border-radius: 10px;
+    background-color: transparent;
+    border-color: #5D4780;
+    color: #5D4780;
+    padding: 10px 20px;
+}
+
+.btn-services:hover {
+    background-color: #5D4780;
+    font-weight: bold;
+    color: #E8DAFF;
 }
