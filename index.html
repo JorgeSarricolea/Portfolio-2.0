@@ -11,7 +11,7 @@
     <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,200;1,200&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,200;1,200&family=Raleway:ital,wght@0,200;0,400;0,500;1,200;1,400;1,500&display=swap" rel="stylesheet">
 
     <!-- Font Awesome CSS -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
@@ -21,7 +21,7 @@
     <link href="vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
     <link href="assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
 
-    <title>Jorge Sarricolea | Home</title>
+    <title>Jorge Sarricoslea | Home</title>
 </head>
 <body id="my-body">
     <!-- Navbar -->
@@ -31,20 +31,78 @@
 				<a class="navbar-brand" href="index.html">
                     <img src="img/logotype.png" alt="Logo">
                 </a>
-                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                    <i class="fa-solid fa-bars"></i>
-                </button>
+                <div class="bars__menu">
+                    <span class="line1__bars-menu"></span>
+                    <span class="line2__bars-menu"></span>
+                    <span class="line3__bars-menu"></span>
+                </div>
+
 				<ul class="navbar-items">
 					<li class="nav-item active"><a class="nav-link" href="index.html">Home</a></li>
 					<li class="nav-item"><a class="nav-link" href="#">About</a></li>
-					<li class="nav-item"><a class="nav-link" href="#">Services</a></li>
-					<li class="nav-item"><a class="nav-link" href="#">Portfolio</a></li>
+
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            Services
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="#">Web Development</a></li>
+                            <li><a class="dropdown-item" href="#">Programming Course</a></li>
+                            <li><a class="dropdown-item" href="#">Finance Course</a></li>
+                        </ul>
+                    </li>
+
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            Portfolio
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="#">Calorie Calculator</a></li>
+                            <li><a class="dropdown-item" href="#">Weather App</a></li>
+                            <li><a class="dropdown-item" href="#">Image Search Engine</a></li>
+                        </ul>
+                    </li>
+
 					<li class="nav-item"><a class="nav-link" href="#">Resume</a></li>
 					<li class="nav-item"><a class="nav-link" href="#">Contact</a></li>
 				</ul>
 			</div>
 		</nav>
 	</header>
+
+    <!-- Menu Mobile -->
+
+    <div class="menuMobile">
+        <ul class="navbarItems-mobile">
+            <li class="nav-item active"><a class="nav-link" href="index.html">Home</a></li>
+            <li class="nav-item"><a class="nav-link" href="#">About</a></li>
+
+            <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    Services
+                </a>
+                <ul class="dropdown-menu">
+                    <li><a class="dropdown-item" href="#">Web Development</a></li>
+                    <li><a class="dropdown-item" href="#">Programming Course</a></li>
+                    <li><a class="dropdown-item" href="#">Finance Course</a></li>
+                </ul>
+            </li>
+
+            <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    Portfolio
+                </a>
+                <ul class="dropdown-menu">
+                    <li><a class="dropdown-item" href="#">Calorie Calculator</a></li>
+                    <li><a class="dropdown-item" href="#">Weather App</a></li>
+                    <li><a class="dropdown-item" href="#">Image Search Engine</a></li>
+                </ul>
+            </li>
+
+                    <li class="nav-item"><a class="nav-link" href="#">Resume</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">Contact</a></li>
+                </ul>
+    </div>
 
     <!-- Hero Section -->
     <section class="hero-section">

@@ -1,6 +1,10 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,200;1,200&family=Raleway:ital,wght@0,200;0,400;0,500;1,200;1,400;1,500&display=swap');
+
+
 #my-body {
     background-color: #E8DAFF;
     font-family: 'ExtraLight 200', sans-serif;
+    color: #5D4780;
 }
 
 /* Navbar */
@@ -37,17 +41,84 @@
 
 }
 
-.navbar-toggler {
+.bars__menu{
+    width: 30px;
+    height: 30px;
+    cursor: pointer;
+    z-index: 10000;
+}
+
+.bars__menu span {
+    display: block;
+    width: 100%;
+    height: 3px;
+    background: #5D4780;
+    margin-top: 6px;
+    transform-origin: 0px 100%;
+    transition: all 300ms;
+    border-radius: 5px;;
+}
+
+.activeline1__bars-menu {
+    transform: rotate(45deg) translate(-2px, 1px);
+}
+
+.activeline2__bars-menu {
+    opacity: 0;
+    margin-left: -30px;
+}
+
+.activeline3__bars-menu {
+    transform: rotate(-45deg) translate(-2px, 2px);
+}
+
+.navbarItems-mobile {
     display: none;
 }
 
-.navbar-toggler:hover {
-    color: #B98EFF;
+.menuMobile {
+    margin: 100px auto 0;
+}
+
+.activenavbarItems-mobile {
+    display: flex;
+    margin-top: 100px;
+    list-style: none;
+    background-color: rgba(116, 109, 128, 0.2);
+    border-radius: 10px;
+    padding: 10px 20px;
+    justify-content: space-evenly;
+    flex-direction: column;
+    width: 90%;
+    margin: 0 auto;
+    height: 400px;
+    transition: ease-in-out;
+}
+
+.navbar-item {
+    width: fit-content;
 }
 
 .navbar-nav li {
     margin-right: 20px;
 }
+
+.dropdown-menu a {
+    background-color: #E8DAFF;
+    color: #5D4780;
+}
+
+.dropdown-menu a:hover {
+    background-color: #B98EFF;
+    font-weight: bold;
+}
+
+.dropdown:hover .dropdown-menu {
+    background-color: #E8DAFF;
+    display: block;
+    color: #B98EFF;
+}
+
 
 .nav-link {
     color: #5D4780;
@@ -132,9 +203,9 @@
 
 .btn-hire:hover {
     background-color: #5D4780;
-    font-weight: bold;
-    color: #E8DAFF;
     border-color: #5D4780;
+    color: #E8DAFF;
+    font-weight: bold;
 }
 
 .btn-services {
@@ -177,21 +248,12 @@
         display: none;
     }
 
+    .menuMobile {
+        flex-direction: column;
+    }
+
     .navbar-container {
         width: 90%;
-    }
-
-    .navbar-toggler {
-        display: block;
-        background-color: transparent;
-        border: none;
-        font-size: 1.5rem;
-        color: #5D4780;
-        cursor: pointer;
-    }
-
-    .navbar-toggler:focus {
-        outline: none;
     }
 
     .hero-section {
@@ -240,5 +302,12 @@
     .social-links {
         width: 80%;
         margin: 0 auto;
+    }
+}
+
+@media only screen and (min-width: 768px) {
+
+    .bars__menu {
+        display: none;
     }
 }
