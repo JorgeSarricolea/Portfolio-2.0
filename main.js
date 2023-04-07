@@ -1,17 +1,48 @@
 $(document).ready(function() {
 
-    /* barsMenu*/
+        /* Navbar and Sections Toggle
+    ----------------*/
 
-    $(".bars__menu").click(function() {
-        $(".line1__bars-menu").toggleClass("activeline1__bars-menu");
-        $(".line2__bars-menu").toggleClass("activeline2__bars-menu");
-        $(".line3__bars-menu").toggleClass("activeline3__bars-menu");
-        $(".navbarItems-mobile").toggleClass("activenavbarItems-mobile");
+    $(".nav-item:first").addClass("active");
+    $(".nav-item:eq(8)").addClass("active");
+    $(".section").hide();
+    $(".section:first").show();
+
+    $(".nav-item").click(function() {
+        $(".nav-item").removeClass("active");
+        $(this).addClass("active");
+        $(".section").hide();
+
+        var activeSection = $(this).attr("href");
+        $(activeSection).show();
+        return false;
     });
 
-    /* typingEffect */
+    $("nav-item dropdown").click(function() {
+        $("nav-item dropdown").removeClass("active");
+        $(this).addClass("active");
 
-    var typingEffect = new Typed(".multiText",{
+        var activeSection = $(this).attr("href");
+        $(activeSection).show();
+        return false;
+    });
+
+
+    /* Bars Menu Icon
+    ----------------*/
+
+    $(".bars-menu").click(function() {
+        $(".line1-bars-menu").toggleClass("activeline1-bars-menu");
+        $(".line2-bars-menu").toggleClass("activeline2-bars-menu");
+        $(".line3-bars-menu").toggleClass("activeline3-bars-menu");
+        $(".items-mobile").toggleClass("activeitems-mobile");
+        $("#navbar").toggleClass("activenavbar");
+    });
+
+    /* Typing Effect
+    ----------------*/
+
+    var typingEffect = new Typed(".multiText", {
         strings : ["Web Developer", "UX/UI Designer", "Graphic Designer"],
         loop : true,
         typeSpeed : 100,
@@ -19,7 +50,7 @@ $(document).ready(function() {
         backDelay : 1500
     });
 
-    var typingEffect2 = new Typed(".multiText2",{
+    var typingEffect2 = new Typed(".multiText2", {
         strings : ["I'm Web Developer and UI/UX Designer"],
         loop : false,
         typeSpeed : 120,

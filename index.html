@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jorge Sarricoslea | Home</title>
 
     <!-- Template Main CSS File -->
     <link rel="stylesheet" href="styles.css">
@@ -30,64 +31,60 @@
     <!-- Template Main JS File -->
     <script src="main.js"></script>
 
-    <title>Jorge Sarricoslea | Home</title>
 </head>
 <body id="my-body">
     <!-- Navbar -->
-    <header>
-		<nav class="navbar">
-			<div class="navbar-container">
-				<a class="navbar-brand" href="index.html">
-                    <img src="img/logotype.png" alt="Logo">
-                </a>
-                <div class="bars__menu">
-                    <span class="line1__bars-menu"></span>
-                    <span class="line2__bars-menu"></span>
-                    <span class="line3__bars-menu"></span>
-                </div>
+    <nav id="navbar" class="navbar">
+        <div class="container">
+            <a class="navbar-brand" href="index.html">
+                <img src="img/logotype.png" alt="Logo">
+            </a>
+            <div class="bars-menu">
+                <span class="line1-bars-menu"></span>
+                <span class="line2-bars-menu"></span>
+                <span class="line3-bars-menu"></span>
+            </div>
 
-				<ul class="navbar-items">
-					<li class="nav-item active"><a class="nav-link" href="index.html">Home</a></li>
-					<li class="nav-item"><a class="nav-link" href="#">About</a></li>
+            <ul class="navbar-items">
+                <li><a href="#home" class="nav-item">Home</a></li>
+                <li><a href="#about" class="nav-item">About</a></li>
 
-                    <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                            Services
-                        </a>
-                        <ul class="dropdown-menu">
-                            <li><a class="dropdown-item" href="#">Web Development</a></li>
-                            <li><a class="dropdown-item" href="#">Programming Course</a></li>
-                            <li><a class="dropdown-item" href="#">Finance Course</a></li>
-                        </ul>
-                    </li>
+                <li class="nav-link dropdown-toggle">
+                    <a href="#services" class="nav-item dropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        Services
+                    </a>
+                    <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="#">Web Development</a></li>
+                        <li><a class="dropdown-item" href="#">Programming Course</a></li>
+                        <li><a class="dropdown-item" href="#">Finance Course</a></li>
+                    </ul>
+                </li>
 
-                    <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                            Portfolio
-                        </a>
-                        <ul class="dropdown-menu">
-                            <li><a class="dropdown-item" href="#">Calorie Calculator</a></li>
-                            <li><a class="dropdown-item" href="#">Weather App</a></li>
-                            <li><a class="dropdown-item" href="#">Image Search Engine</a></li>
-                        </ul>
-                    </li>
+                <li class="nav-link dropdown-toggle">
+                    <a href="#portfolio" class="nav-item dropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        Portfolio
+                    </a>
+                    <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="#">Calorie Calculator</a></li>
+                        <li><a class="dropdown-item" href="#">Weather App</a></li>
+                        <li><a class="dropdown-item" href="#">Image Search Engine</a></li>
+                    </ul>
+                </li>
 
-					<li class="nav-item"><a class="nav-link" href="#">Resume</a></li>
-					<li class="nav-item"><a class="nav-link" href="#">Contact</a></li>
-				</ul>
-			</div>
-		</nav>
-	</header>
+                <li><a href="#resume" class="nav-item">Resume</a></li>
+                <li><a href="#contact" class="nav-item">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
 
     <!-- Menu Mobile -->
+    <div class="menu-mobile">
+        <ul class="items-mobile">
+            <li><a href="#home" class="nav-item">Home</a></li>
+            <li><a href="#about" class="nav-item">About</a></li>
 
-    <div class="menuMobile">
-        <ul class="navbarItems-mobile">
-            <li class="nav-item active"><a class="nav-link" href="index.html">Home</a></li>
-            <li class="nav-item"><a class="nav-link" href="#">About</a></li>
-
-            <li class="nav-item dropdown">
-                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            <li class="nav-link dropdown-toggle">
+                <a href="#services" class="nav-item dropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                     Services
                 </a>
                 <ul class="dropdown-menu">
@@ -97,8 +94,8 @@
                 </ul>
             </li>
 
-            <li class="nav-item dropdown">
-                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            <li class="nav-link dropdown-toggle">
+                <a href="#portfolio" role="button" class="nav-item dropdown" data-bs-toggle="dropdown" aria-expanded="false">
                     Portfolio
                 </a>
                 <ul class="dropdown-menu">
@@ -108,14 +105,14 @@
                 </ul>
             </li>
 
-                    <li class="nav-item"><a class="nav-link" href="#">Resume</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#">Contact</a></li>
-                </ul>
+            <li><a href="#resume" class="nav-item">Resume</a></li>
+            <li><a href="#contact" class="nav-item">Contact</a></li>
+        </ul>
     </div>
 
-    <!-- Hero Section -->
-    <section class="hero-section">
-    <div class="hero-container">
+    <!-- Home Section -->
+    <section id="home" class="section">
+    <div class="container">
         <div class="row">
             <div class="col-lg-6">
                 <div class="whoami">
@@ -135,12 +132,41 @@
                 </div>
             </div>
             <div class="col-lg-5">
-                <div class="hero-photo">
-                <img src="img/CV_Photo.png" alt="Hero Photo">
-                </div>
+                <img src="img/CV_Photo.png">
             </div>
         </div>
     </div>
+    </section>
+
+    <section id="about" class="section">
+        <h1>
+            About me
+        </h1>
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatem placeat quia dolorem possimus impedit quibusdam cum aliquid assumenda expedita id itaque autem, fugit fugiat hic earum nulla accusamus provident ullam! Voluptas labore reiciendis eaque sed, quasi nobis quas quibusdam doloremque debitis dolor quidem, placeat nam quae iusto recusandae ipsa? Fugiat esse illum cupiditate dolore accusantium temporibus, beatae praesentium perspiciatis, nulla voluptates vel blanditiis dignissimos ipsam assumenda inventore, natus dolor similique? Natus tempore libero molestiae vitae quae beatae illo, impedit veritatis ea id atque, blanditiis deserunt ducimus modi esse suscipit ut repudiandae odit perspiciatis, voluptatem mollitia praesentium? Totam minus iste est.
+    </section>
+    <section id="services" class="section">
+        <h1>
+            My services
+        </h1>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti ipsum expedita a error quia recusandae ducimus eius repudiandae sequi, ut blanditiis voluptate, porro cum sint enim tempore iste impedit eaque! Recusandae provident quam aliquam ipsam amet voluptates fugit, modi optio esse ipsa nostrum sint voluptatibus autem quibusdam porro consectetur dolore? Neque, repudiandae! Veniam consectetur non ducimus, eos ullam quam itaque delectus quisquam voluptas, porro sequi. Quis debitis impedit eaque provident quaerat aut dicta corrupti. Maxime quo quaerat eaque quibusdam, voluptatum pariatur ratione. Eveniet qui rem, maxime voluptatum fuga odio autem. Optio, eius? Dicta impedit odio, ullam eligendi repudiandae, illum, consequatur vel harum alias sunt tempora debitis. Incidunt quam nihil dolorum animi dignissimos! Similique tenetur quos qui eligendi repudiandae ipsam fugiat laudantium, assumenda alias commodi ex facilis explicabo obcaecati numquam nulla possimus voluptatum laboriosam excepturi ea magni neque ut consequatur. Ducimus aliquam cumque facilis fuga eos sint mollitia excepturi deserunt commodi dolores eius officiis dolor, accusantium laboriosam quae quis voluptatibus molestiae ullam reiciendis nihil, modi aspernatur aperiam sapiente! Expedita reiciendis excepturi atque! Accusamus enim, aspernatur, hic ea illum itaque fugit inventore consectetur voluptate nihil ab, corrupti dolorum dolorem consequatur. Quasi nobis consequuntur autem veritatis, officia eveniet corporis quam delectus consectetur maxime.
+    </section>
+    <section id="portfolio" class="section">
+        <h1>
+            My projects
+        </h1>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda eligendi quo dolor praesentium id unde nemo necessitatibus obcaecati quia. Accusamus, eaque? Veniam incidunt aut obcaecati, tenetur quas harum at provident sunt odio quos maxime laudantium voluptatem non repellendus consequatur qui minima sequi reprehenderit quisquam expedita officiis accusamus! Soluta, ipsam. Facilis alias in debitis quae? Sint officiis tempore magnam fugiat, provident voluptatem cum similique, commodi sed dolorum distinctio neque incidunt veritatis voluptatum. Quo quidem non eaque ab commodi laudantium nostrum rem earum porro est, nesciunt maiores fugiat. Aspernatur maxime ipsa ratione eligendi officiis libero, fugit aut magnam voluptatem dolores doloribus dicta qui impedit quasi! Voluptas ducimus id quisquam velit. Repellat quos tempora minima culpa quas? Fuga libero omnis tenetur laborum ut totam eos accusantium esse dolorem! Alias rem facere perferendis nulla labore temporibus provident ipsam vel eius nemo cupiditate exercitationem saepe ad repellendus tempore soluta ipsa sunt pariatur doloribus commodi, magnam nisi animi quibusdam dolore. Mollitia, explicabo! Dolor nisi molestiae tempora illum, eaque facilis eum accusantium expedita aut consectetur provident, ipsam, natus quae soluta quo sequi vel assumenda doloremque autem quidem ducimus doloribus! Maiores necessitatibus quidem aut voluptatum neque excepturi debitis odit, laboriosam deserunt nobis magni. Quis, voluptates! Dignissimos sequi voluptatem eligendi velit eius maiores quibusdam expedita sit, tenetur quo culpa magnam optio laboriosam ducimus vitae illo fuga amet a voluptatibus beatae. Quia molestias fuga necessitatibus tempore dolorum odio, vitae eos eligendi voluptas quam excepturi, ex deserunt aut voluptatem nostrum distinctio facilis rerum, adipisci corrupti. Hic blanditiis cupiditate distinctio dolores, impedit aut quae, corporis dolor voluptate vel voluptates quaerat sapiente eos obcaecati, sequi odio perferendis perspiciatis natus iusto repellendus voluptatum itaque. Similique officiis vitae totam error exercitationem quisquam itaque cumque a expedita iste adipisci, fugit maiores autem perferendis molestias. Distinctio repellendus odit accusantium illum odio cumque fugit sunt nobis temporibus blanditiis.
+    </section>
+    <section id="resume" class="section">
+        <h1>
+            My resume
+        </h1>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet pariatur sequi quis a nulla nihil vitae minima ducimus commodi odit explicabo provident voluptatem, nobis quam exercitationem modi cupiditate autem quaerat sed cumque reiciendis mollitia repellat? Quos dolorem quam voluptas dolore iste a asperiores, quod odit corrupti nesciunt culpa eligendi nemo ad doloremque minima deserunt in maiores labore, eaque est. Saepe iste illo delectus, laudantium nostrum repudiandae rerum fugit aspernatur ducimus tempora. Blanditiis laboriosam quisquam sequi dolorum repellendus nesciunt vitae quam minus illum, rem suscipit explicabo inventore ut voluptatibus totam ea exercitationem nobis veritatis. Dignissimos odit iste quia vel vero officiis, doloribus tenetur saepe provident eligendi. Dolore assumenda est, neque cumque at quibusdam officia architecto deleniti, quos commodi nemo eveniet voluptatibus quidem consequatur eum ullam repellat perspiciatis minima aut vitae ratione, qui rem. Itaque totam corporis tempora maiores similique cum explicabo saepe veritatis aspernatur soluta ipsa debitis officia eveniet ea omnis atque impedit odio nesciunt molestias cumque earum culpa, amet odit tempore. Tempora fugiat et similique at necessitatibus aliquid dolor assumenda hic deserunt reiciendis rerum temporibus quia mollitia velit, eveniet possimus! Molestiae facilis, unde ipsam quo atque, architecto eos expedita eum minus ex commodi voluptas veritatis odit placeat recusandae, labore quia dolorum nesciunt amet eius? Soluta debitis, qui inventore iste non commodi beatae ea, quos sit, repellat architecto deleniti harum! Cumque dolores praesentium obcaecati facilis a eaque aliquam, debitis facere dolore saepe magnam necessitatibus, ad consectetur asperiores! Maxime nostrum qui harum! Ipsa et excepturi labore inventore, dolorem fugit iusto eos quibusdam nisi, eveniet sit corporis consequuntur! Accusantium dicta vero quis temporibus magni voluptatum nesciunt distinctio quasi! Quia corrupti voluptas, natus adipisci, modi perferendis odit aut laboriosam architecto, amet quo cum. Illo in sunt asperiores eligendi itaque accusantium. Consequuntur, delectus enim ipsa repellat qui ex illum asperiores odit? Necessitatibus, harum ab tenetur consequatur temporibus, ipsa eius animi optio aliquam vero minima, quasi non. Dolores expedita quaerat debitis officia quam obcaecati sapiente, fugit dolorum dignissimos atque, animi modi mollitia non reiciendis necessitatibus impedit sequi asperiores itaque at maxime vitae. Sint sunt non fuga beatae repudiandae sapiente ipsa eveniet ut! Quia, quisquam. Aliquam repudiandae eveniet consequuntur nesciunt, corrupti officia porro adipisci, aliquid, blanditiis saepe officiis fuga possimus? Aspernatur exercitationem cum doloremque alias officiis facilis dolore sed hic deleniti. Dolores laborum tenetur eum magni delectus excepturi, magnam quisquam! Aliquid praesentium modi porro quia asperiores, quas adipisci natus illo ipsam vitae eveniet beatae autem, laudantium fuga.
+    </section>
+    <section id="contact" class="section">
+        <h1>
+            Contact me!
+        </h1>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur error assumenda eos quisquam illo magnam similique animi qui reprehenderit sint quam natus delectus vitae perferendis, dolores rerum ut magni esse itaque est cumque maiores? Id ratione ex eius sint, enim illo, aperiam est vitae hic amet in illum eos quidem sit voluptas voluptatum. Quas fugiat molestiae voluptatem amet provident blanditiis quisquam exercitationem aliquid inventore mollitia. Asperiores, quis assumenda? Modi amet provident corrupti rem, eaque sit. Sunt officia in repellat dolore ipsa error eligendi adipisci odit fugiat nostrum, unde delectus, qui neque voluptate ab aliquid repudiandae nemo omnis? Labore, veniam quibusdam!
     </section>
 
 </body>
