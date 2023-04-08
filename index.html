@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -12,10 +13,14 @@
     <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,200;1,200&family=Raleway:ital,wght@0,200;0,400;0,500;1,200;1,400;1,500&display=swap" rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,200;1,200&family=Raleway:ital,wght@0,200;0,400;0,500;1,200;1,400;1,500&display=swap"
+        rel="stylesheet">
 
     <!-- Font Awesome CSS -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
+        integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
 
     <!-- Vendor CSS Files -->
     <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
@@ -32,10 +37,11 @@
     <script src="main.js"></script>
 
 </head>
+
 <body id="my-body">
     <!-- Navbar -->
     <nav id="navbar" class="navbar">
-        <div class="container">
+        <div class="nav-container">
             <a class="navbar-brand" href="index.html">
                 <img src="img/logotype.png" alt="Logo">
             </a>
@@ -50,7 +56,8 @@
                 <li><a href="#about" class="nav-item">About</a></li>
 
                 <li class="nav-link dropdown-toggle">
-                    <a href="#services" class="nav-item dropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    <a href="#services" class="nav-item dropdown" role="button" data-bs-toggle="dropdown"
+                        aria-expanded="false">
                         Services
                     </a>
                     <ul class="dropdown-menu">
@@ -61,7 +68,8 @@
                 </li>
 
                 <li class="nav-link dropdown-toggle">
-                    <a href="#portfolio" class="nav-item dropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    <a href="#portfolio" class="nav-item dropdown" role="button" data-bs-toggle="dropdown"
+                        aria-expanded="false">
                         Portfolio
                     </a>
                     <ul class="dropdown-menu">
@@ -84,7 +92,8 @@
             <li><a href="#about" class="nav-item">About</a></li>
 
             <li class="nav-link dropdown-toggle">
-                <a href="#services" class="nav-item dropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                <a href="#services" class="nav-item dropdown" role="button" data-bs-toggle="dropdown"
+                    aria-expanded="false">
                     Services
                 </a>
                 <ul class="dropdown-menu">
@@ -95,7 +104,8 @@
             </li>
 
             <li class="nav-link dropdown-toggle">
-                <a href="#portfolio" role="button" class="nav-item dropdown" data-bs-toggle="dropdown" aria-expanded="false">
+                <a href="#portfolio" role="button" class="nav-item dropdown" data-bs-toggle="dropdown"
+                    aria-expanded="false">
                     Portfolio
                 </a>
                 <ul class="dropdown-menu">
@@ -112,62 +122,170 @@
 
     <!-- Home Section -->
     <section id="home" class="section">
-    <div class="container">
-        <div class="row">
-            <div class="col-lg-6">
-                <div class="whoami">
-                    <h1>I´m a <span class="multiText"></span></h1>
+        <div id="home-info" class="container">
+            <div class="row">
+                <div class="col-lg-7">
+                    <div class="whoami">
+                        <h1>I´m a <span class="multiText"></span></h1>
+                    </div>
+                    <h2>Your website is the first impression you make on your customers. Let me help you create an
+                        exceptional online experience through my skills in web development and UX/UI design.</h2>
+                    <button id="primary-btn" class="btn-hire" href="https://wa.me/529381095593">Hire me</button>
+                    <button id="secondary-btn" class="btn-services" href="#services">Services</button>
+                    <div class="social-links">
+                        <a href="https://github.com/JorgeSarricolea" class="github" target="_blank"><i
+                                class="fa-brands fa-github"></i></a>
+                        <a href="https://www.linkedin.com/in/jorge-sarricolea/" class="linkedin" target="_blank"><i
+                                class="fa-brands fa-linkedin-in"></i></a>
+                        <a href="https://www.behance.net/jorgessarrico" class="behance" target="_blank"><i
+                                class="fa-brands fa-behance"></i></a>
+                        <a href="https://instagram.com/jorge.sarricolea" class="instagram" target="_blank"><i
+                                class="fa-brands fa-instagram"></i></a>
+                        <a href="https://www.jumwork.com/" class="jumwork" target="_blank"><i
+                                class="fa-solid fa-book"></i></a>
+                    </div>
                 </div>
-                <h2>Your website is the first impression you make on your customers. Let me help you create an exceptional online experience through my skills in web development and UX/UI design.</h2>
-                <div class="main-btns">
-                    <button class="btn-hire">Hire me</button>
-                    <button class="btn-services">Services</button>
+                <div class="col-lg-5">
+                    <img src="img/CV_Photo.png">
                 </div>
-                <div class="social-links">
-                    <a href="https://github.com/JorgeSarricolea" class="github" target="_blank"><i class="fa-brands fa-github"></i></a>
-                    <a href="https://www.linkedin.com/in/jorge-sarricolea/" class="linkedin" target="_blank"><i class="fa-brands fa-linkedin-in"></i></a>
-                    <a href="https://www.behance.net/jorgessarrico" class="behance" target="_blank"><i class="fa-brands fa-behance"></i></a>
-                    <a href="https://instagram.com/jorge.sarricolea" class="instagram" target="_blank"><i class="fa-brands fa-instagram"></i></a>
-                    <a href="https://www.jumwork.com/" class="jumwork" target="_blank"><i class="fa-solid fa-book"></i></a>
-                </div>
-            </div>
-            <div class="col-lg-5">
-                <img src="img/CV_Photo.png">
             </div>
         </div>
-    </div>
     </section>
 
+    <!-- About Section -->
     <section id="about" class="section">
-        <h1>
-            About me
-        </h1>
-        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatem placeat quia dolorem possimus impedit quibusdam cum aliquid assumenda expedita id itaque autem, fugit fugiat hic earum nulla accusamus provident ullam! Voluptas labore reiciendis eaque sed, quasi nobis quas quibusdam doloremque debitis dolor quidem, placeat nam quae iusto recusandae ipsa? Fugiat esse illum cupiditate dolore accusantium temporibus, beatae praesentium perspiciatis, nulla voluptates vel blanditiis dignissimos ipsam assumenda inventore, natus dolor similique? Natus tempore libero molestiae vitae quae beatae illo, impedit veritatis ea id atque, blanditiis deserunt ducimus modi esse suscipit ut repudiandae odit perspiciatis, voluptatem mollitia praesentium? Totam minus iste est.
+        <div id="information" class="container">
+            <div class="row">
+                <div class="col-lg-4">
+                    <img src="img/info-photo.jpg">
+                </div>
+                <div class="col-lg-8">
+                    <h1><span class="multiText2"></span></h1>
+
+                    <p>I am a Web Developer specialized in UI/UX Design. My latest best work has been <a href="https://www.jumwork.com/" target="_blank"><strong>Jumwork</strong></a>, a digital
+                        responsive marketplace like Fiverr, where I used Bubble.io technology and worked on the entire interface
+                        design and user experience, as well as the development of brand identity and project colors.</p>
+
+                    <p>I am a Personal Finance and Technology enthusiast, so I have created a complete template in Google
+                        this template in my <a href="#"><strong>Personal Finance Course</strong></a> where I teach from scratch how to manage your money in the
+                        Sheets to manage personal finances correctly, day by day, month by month, and year by year. I provide
+                        best way possible. Apart from this, I have another <a href="#"><strong>Programming and Operating Systems Course</strong></a> where I
+                        teach programming from scratch in Java and Python.</p>
+
+                    <p>Finally, I have created a growing community on Discord called <strong>Home | Projects</strong> where you can find more
+                        information about the courses and news about these two topics that I discuss.</p>
+
+                    <button href="https://discord.gg/ad5qhqy8" id="primary-btn" class="btn-discord">Join channel</button>
+                </div>
+            </div>
+        </div>
+        <div id="skills" class="container">
+            <div class="row">
+                <h1>Skills</h1>
+                <div class="rows-containers">
+                    <div class="container-group">
+                        <h2>Programming</h2>
+                        <h3>HTML, CSS, JavaScript, React, JQuery, Bubble.io, Java, Python</h3>
+                    </div>
+                    <div class="container-group">
+                        <h2>Design</h2>
+                        <h3>Adobe Illustrator, Adobe Photoshop, Adobe Premiere Pro, Figma</h3>
+                    </div>
+                    <div class="container-group">
+                        <h2>Tools</h2>
+                        <h3>Git, Github, VSCode, Boostrap, Trello, Notion, Slack, Miro</h3>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="interests" class="container">
+            <div class="row">
+                <h1>Interests</h1>
+
+                <div class="rows-containers">
+                    <div class="container-group" href="https://frontendmasters.com/guides/front-end-handbook/2018/what-is-a-FD.html">
+                        <i class="fa-solid fa-pager"></i>
+                        <h2>Frontend Dev</h2>
+                    </div>
+                    <div class="container-group" href="https://flexiple.com/backend/deep-dive/">
+                        <i class="fa-solid fa-database"></i>
+                        <h2>Backend Dev</h2>
+                    </div>
+                    <div class="container-group" href="#">
+                        <i class="fa-solid fa-money-check-dollar"></i>
+                        <h2>Personal Finance</h2>
+                    </div>
+                </div>
+
+                <div class="rows-containers">
+                    <div class="container-group" href="https://www.knowledgehut.com/blog/others/what-is-management">
+                        <i class="fa-solid fa-bars-progress"></i>
+                        <h2>Management</h2>
+                    </div>
+                    <div class="container-group" href="https://www.linkedin.com/in/jorge-sarricolea/">
+                        <i class="fa-sharp fa-solid fa-globe"></i>
+                        <h2>Networking</h2>
+                    </div>
+                    <div class="container-group" href="https://spotify.link/g8LiByc9Oyb">
+                        <i class="fa-solid fa-headphones"></i>
+                        <h2>Listen Punk!</h2>
+                    </div>
+                </div>
+
+                <div class="rows-containers">
+                    <div class="container-group" href="https://www.instagram.com/jorge.sarricolea/">
+                        <i class="fa-solid fa-video"></i>
+                        <h2>Video Vlogs</h2>
+                    </div>
+                    <div class="container-group" href="https://www.instagram.com/jorge.sarricolea/">
+                        <i class="fa-solid fa-camera"></i>
+                        <h2>Photography</h2>
+                    </div>
+                    <div class="container-group" href="https://www.youtube.com/watch?v=dMSY7TWn7fA">
+                        <i class="fa-solid fa-map-location-dot"></i>
+                        <h2>Urban Exploration</h2>
+                    </div>
+                </div>
+
+                <div class="rows-containers">
+                    <div class="container-group" href="#">
+                        <i class="fa-solid fa-dumbbell"></i>
+                        <h2>Work Out</h2>
+                    </div>
+                    <div class="container-group" href="https://www.hbomax.com/mx/es/feature/urn:hbo:feature:GYGP7pwQv_ojDXAEAAAFc">
+                        <i class="fa-solid fa-film"></i>
+                        <h2>Movies (Interstellar)</h2>
+                    </div>
+                    <div class="container-group" href="https://images.pexels.com/photos/1633578/pexels-photo-1633578.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1">
+                        <i class="fa-solid fa-burger"></i>
+                        <h2>Hamburgers!</h2>
+                    </div>
+                </div>
+
+            </div>
+        </div>
     </section>
     <section id="services" class="section">
         <h1>
             My services
         </h1>
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti ipsum expedita a error quia recusandae ducimus eius repudiandae sequi, ut blanditiis voluptate, porro cum sint enim tempore iste impedit eaque! Recusandae provident quam aliquam ipsam amet voluptates fugit, modi optio esse ipsa nostrum sint voluptatibus autem quibusdam porro consectetur dolore? Neque, repudiandae! Veniam consectetur non ducimus, eos ullam quam itaque delectus quisquam voluptas, porro sequi. Quis debitis impedit eaque provident quaerat aut dicta corrupti. Maxime quo quaerat eaque quibusdam, voluptatum pariatur ratione. Eveniet qui rem, maxime voluptatum fuga odio autem. Optio, eius? Dicta impedit odio, ullam eligendi repudiandae, illum, consequatur vel harum alias sunt tempora debitis. Incidunt quam nihil dolorum animi dignissimos! Similique tenetur quos qui eligendi repudiandae ipsam fugiat laudantium, assumenda alias commodi ex facilis explicabo obcaecati numquam nulla possimus voluptatum laboriosam excepturi ea magni neque ut consequatur. Ducimus aliquam cumque facilis fuga eos sint mollitia excepturi deserunt commodi dolores eius officiis dolor, accusantium laboriosam quae quis voluptatibus molestiae ullam reiciendis nihil, modi aspernatur aperiam sapiente! Expedita reiciendis excepturi atque! Accusamus enim, aspernatur, hic ea illum itaque fugit inventore consectetur voluptate nihil ab, corrupti dolorum dolorem consequatur. Quasi nobis consequuntur autem veritatis, officia eveniet corporis quam delectus consectetur maxime.
     </section>
     <section id="portfolio" class="section">
         <h1>
             My projects
         </h1>
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda eligendi quo dolor praesentium id unde nemo necessitatibus obcaecati quia. Accusamus, eaque? Veniam incidunt aut obcaecati, tenetur quas harum at provident sunt odio quos maxime laudantium voluptatem non repellendus consequatur qui minima sequi reprehenderit quisquam expedita officiis accusamus! Soluta, ipsam. Facilis alias in debitis quae? Sint officiis tempore magnam fugiat, provident voluptatem cum similique, commodi sed dolorum distinctio neque incidunt veritatis voluptatum. Quo quidem non eaque ab commodi laudantium nostrum rem earum porro est, nesciunt maiores fugiat. Aspernatur maxime ipsa ratione eligendi officiis libero, fugit aut magnam voluptatem dolores doloribus dicta qui impedit quasi! Voluptas ducimus id quisquam velit. Repellat quos tempora minima culpa quas? Fuga libero omnis tenetur laborum ut totam eos accusantium esse dolorem! Alias rem facere perferendis nulla labore temporibus provident ipsam vel eius nemo cupiditate exercitationem saepe ad repellendus tempore soluta ipsa sunt pariatur doloribus commodi, magnam nisi animi quibusdam dolore. Mollitia, explicabo! Dolor nisi molestiae tempora illum, eaque facilis eum accusantium expedita aut consectetur provident, ipsam, natus quae soluta quo sequi vel assumenda doloremque autem quidem ducimus doloribus! Maiores necessitatibus quidem aut voluptatum neque excepturi debitis odit, laboriosam deserunt nobis magni. Quis, voluptates! Dignissimos sequi voluptatem eligendi velit eius maiores quibusdam expedita sit, tenetur quo culpa magnam optio laboriosam ducimus vitae illo fuga amet a voluptatibus beatae. Quia molestias fuga necessitatibus tempore dolorum odio, vitae eos eligendi voluptas quam excepturi, ex deserunt aut voluptatem nostrum distinctio facilis rerum, adipisci corrupti. Hic blanditiis cupiditate distinctio dolores, impedit aut quae, corporis dolor voluptate vel voluptates quaerat sapiente eos obcaecati, sequi odio perferendis perspiciatis natus iusto repellendus voluptatum itaque. Similique officiis vitae totam error exercitationem quisquam itaque cumque a expedita iste adipisci, fugit maiores autem perferendis molestias. Distinctio repellendus odit accusantium illum odio cumque fugit sunt nobis temporibus blanditiis.
     </section>
     <section id="resume" class="section">
         <h1>
             My resume
         </h1>
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet pariatur sequi quis a nulla nihil vitae minima ducimus commodi odit explicabo provident voluptatem, nobis quam exercitationem modi cupiditate autem quaerat sed cumque reiciendis mollitia repellat? Quos dolorem quam voluptas dolore iste a asperiores, quod odit corrupti nesciunt culpa eligendi nemo ad doloremque minima deserunt in maiores labore, eaque est. Saepe iste illo delectus, laudantium nostrum repudiandae rerum fugit aspernatur ducimus tempora. Blanditiis laboriosam quisquam sequi dolorum repellendus nesciunt vitae quam minus illum, rem suscipit explicabo inventore ut voluptatibus totam ea exercitationem nobis veritatis. Dignissimos odit iste quia vel vero officiis, doloribus tenetur saepe provident eligendi. Dolore assumenda est, neque cumque at quibusdam officia architecto deleniti, quos commodi nemo eveniet voluptatibus quidem consequatur eum ullam repellat perspiciatis minima aut vitae ratione, qui rem. Itaque totam corporis tempora maiores similique cum explicabo saepe veritatis aspernatur soluta ipsa debitis officia eveniet ea omnis atque impedit odio nesciunt molestias cumque earum culpa, amet odit tempore. Tempora fugiat et similique at necessitatibus aliquid dolor assumenda hic deserunt reiciendis rerum temporibus quia mollitia velit, eveniet possimus! Molestiae facilis, unde ipsam quo atque, architecto eos expedita eum minus ex commodi voluptas veritatis odit placeat recusandae, labore quia dolorum nesciunt amet eius? Soluta debitis, qui inventore iste non commodi beatae ea, quos sit, repellat architecto deleniti harum! Cumque dolores praesentium obcaecati facilis a eaque aliquam, debitis facere dolore saepe magnam necessitatibus, ad consectetur asperiores! Maxime nostrum qui harum! Ipsa et excepturi labore inventore, dolorem fugit iusto eos quibusdam nisi, eveniet sit corporis consequuntur! Accusantium dicta vero quis temporibus magni voluptatum nesciunt distinctio quasi! Quia corrupti voluptas, natus adipisci, modi perferendis odit aut laboriosam architecto, amet quo cum. Illo in sunt asperiores eligendi itaque accusantium. Consequuntur, delectus enim ipsa repellat qui ex illum asperiores odit? Necessitatibus, harum ab tenetur consequatur temporibus, ipsa eius animi optio aliquam vero minima, quasi non. Dolores expedita quaerat debitis officia quam obcaecati sapiente, fugit dolorum dignissimos atque, animi modi mollitia non reiciendis necessitatibus impedit sequi asperiores itaque at maxime vitae. Sint sunt non fuga beatae repudiandae sapiente ipsa eveniet ut! Quia, quisquam. Aliquam repudiandae eveniet consequuntur nesciunt, corrupti officia porro adipisci, aliquid, blanditiis saepe officiis fuga possimus? Aspernatur exercitationem cum doloremque alias officiis facilis dolore sed hic deleniti. Dolores laborum tenetur eum magni delectus excepturi, magnam quisquam! Aliquid praesentium modi porro quia asperiores, quas adipisci natus illo ipsam vitae eveniet beatae autem, laudantium fuga.
     </section>
     <section id="contact" class="section">
         <h1>
             Contact me!
         </h1>
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur error assumenda eos quisquam illo magnam similique animi qui reprehenderit sint quam natus delectus vitae perferendis, dolores rerum ut magni esse itaque est cumque maiores? Id ratione ex eius sint, enim illo, aperiam est vitae hic amet in illum eos quidem sit voluptas voluptatum. Quas fugiat molestiae voluptatem amet provident blanditiis quisquam exercitationem aliquid inventore mollitia. Asperiores, quis assumenda? Modi amet provident corrupti rem, eaque sit. Sunt officia in repellat dolore ipsa error eligendi adipisci odit fugiat nostrum, unde delectus, qui neque voluptate ab aliquid repudiandae nemo omnis? Labore, veniam quibusdam!
     </section>
 
 </body>
+
 </html>

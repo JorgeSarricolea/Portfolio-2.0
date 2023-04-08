@@ -4,7 +4,7 @@ $(document).ready(function() {
     ----------------*/
 
     $(".nav-item:first").addClass("active");
-    $(".nav-item:eq(8)").addClass("active");
+    $(".nav-item:eq(6)").addClass("active");
     $(".section").hide();
     $(".section:first").show();
 
@@ -53,6 +53,30 @@ $(document).ready(function() {
     var typingEffect2 = new Typed(".multiText2", {
         strings : ["I'm Web Developer and UI/UX Designer"],
         loop : false,
-        typeSpeed : 120,
+        typeSpeed : 50,
     });
+
+    /* Buttons
+    ----------------*/
+
+    $(".btn-discord").click(function() {
+        window.open($(this).attr("href"), "_blank");
+    });
+
+    $(".btn-hire").click(function() {
+        window.open($(this).attr("href"), "_blank");
+    });
+
+    $(".btn-services").click(function() {
+        $(".nav-item").removeClass("active");
+        $(".section").hide();
+        $("#services.section").show();
+        $(".nav-item:eq(2)").addClass("active");
+        $(".nav-item:eq(8)").addClass("active");
+    });
+
+    $('.container-group').click(function() {
+        window.open($(this).attr('href'));
+      });
+      
 });
