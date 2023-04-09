@@ -193,6 +193,11 @@
     font-weight: bold;
 }
 
+#primary-btn .disabled-objects {
+    display: none;
+    overflow: hidden;
+}
+
 #secondary-btn {
     border-radius: var(--buttonsRadius);
     background-color: transparent;
@@ -206,6 +211,10 @@
     background-color: #5D4780;
     font-weight: bold;
     color: #E8DAFF;
+}
+
+#information {
+    padding: var(--generalPadding);
 }
 
 .section {
@@ -278,6 +287,10 @@
 /* About Section
 ----------------*/
 
+#about #information .row {
+    padding: 0;
+}
+
 #about h1 {
     font-weight: bold;
 }
@@ -310,15 +323,6 @@
     padding: var(--generalPadding);
 }
 
-#interests .container-group {
-    display: flex;
-    flex-direction: row;
-    width: 33%;
-    background-color: rgba(116, 109, 128, 0.2);
-    border-radius: 10px;
-    padding: var(--generalPadding);
-}
-
 #about h2 {
     font-size: var(--h2_subtitles);
     font-weight: bold;
@@ -328,7 +332,6 @@
 #about h3 {
     font-size: var(--h3_normalBody);
 }
-
 
 #about i {
     align-self: center;
@@ -351,6 +354,90 @@
 #interests .container-group:hover {
     background-color: #B98EFF;
     cursor: pointer;
+}
+
+#interests .container-group {
+    display: flex;
+    flex-direction: row;
+    width: 33%;
+    background-color: rgba(116, 109, 128, 0.2);
+    border-radius: 10px;
+    padding: var(--generalPadding);
+}
+
+/* Services Section
+----------------*/
+
+#services .rows-containers {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    gap: var(--generalGap);
+}
+
+#services .container-group {
+    display: flex;
+    flex-direction: column;
+    width: 33.33%;
+    background-color: rgba(116, 109, 128, 0.2);
+    border-radius: 10px;
+    padding: var(--generalPadding);
+}
+
+#services .activecontainer-group {
+    width: 100%;
+}
+
+#services .content {
+    display: none;
+}
+
+#services .activecontent {
+    display: flex;
+    flex-direction: column;
+
+}
+
+#services .disabled-objects {
+    display: none;
+    overflow: hidden;
+}
+
+#services h2 {
+    font-size: var(--h2_subtitles);
+    font-weight: bold;
+    bottom: 10px;
+}
+
+#services h3 {
+    font-size: var(--h3_normalBody);
+}
+
+#services .buttons-services {
+    flex-direction: column;
+    gap: var(--generalGap);
+}
+
+#services #primary-btn {
+    margin-right: 20px;
+}
+
+/* Portfolio Section
+----------------*/
+
+#portfolio .rows-containers {
+    display: flex;
+    flex-direction: row;
+    gap: var(--generalGap);
+}
+
+#portfolio .container-group {
+    display: flex;
+    flex-direction: column;
+    width: 33%;
+    background-color: rgba(116, 109, 128, 0.2);
+    border-radius: 10px;
+    padding: var(--generalPadding);
 }
 
 /* Responsive
@@ -409,7 +496,7 @@
         margin: 40px auto 0;
     }
 
-    /* Home Section
+    /* About Section
     ----------------*/
 
     #interests .rows-containers {
@@ -418,6 +505,17 @@
 
     #interests .row {
         padding-bottom: 0;
+    }
+
+    /* Services Section
+    ----------------*/
+
+    #services .rows-containers {
+        flex-direction: column;
+    }
+
+    #services .container-group {
+        width: 100%;
     }
 }
 

@@ -1,7 +1,7 @@
 $(document).ready(function() {
 
-        /* Navbar and Sections Toggle
-    ----------------*/
+/* Navbar and Sections Toggle
+----------------*/
 
     $(".nav-item:first").addClass("active");
     $(".nav-item:eq(6)").addClass("active");
@@ -18,18 +18,8 @@ $(document).ready(function() {
         return false;
     });
 
-    $("nav-item dropdown").click(function() {
-        $("nav-item dropdown").removeClass("active");
-        $(this).addClass("active");
-
-        var activeSection = $(this).attr("href");
-        $(activeSection).show();
-        return false;
-    });
-
-
-    /* Bars Menu Icon
-    ----------------*/
+/* Bars Menu Icon
+----------------*/
 
     $(".bars-menu").click(function() {
         $(".line1-bars-menu").toggleClass("activeline1-bars-menu");
@@ -39,8 +29,8 @@ $(document).ready(function() {
         $("#navbar").toggleClass("activenavbar");
     });
 
-    /* Typing Effect
-    ----------------*/
+/* Typing Effect
+----------------*/
 
     var typingEffect = new Typed(".multiText", {
         strings : ["Web Developer", "UX/UI Designer", "Graphic Designer"],
@@ -56,8 +46,8 @@ $(document).ready(function() {
         typeSpeed : 50,
     });
 
-    /* Buttons
-    ----------------*/
+/* Buttons
+----------------*/
 
     $(".btn-discord").click(function() {
         window.open($(this).attr("href"), "_blank");
@@ -75,8 +65,78 @@ $(document).ready(function() {
         $(".nav-item:eq(8)").addClass("active");
     });
 
-    $('.container-group').click(function() {
+    $('.btn-wa').click(function() {
         window.open($(this).attr('href'));
-      });
-      
+    });
+
+/* Interests Links
+----------------*/
+
+    $('#interests .container-group').click(function() {
+        window.open($(this).attr('href'));
+    });
+
+/* Web Development Information Toggle
+----------------*/
+
+    $("#web-development .btn-moreinfo").click(function() {
+        $(this).toggleClass("disabled-objects");
+        $(".container-group").hide();
+        $("#web-development.container-group").show();
+        $(".content").toggleClass("activecontent");
+        $(".container-group").toggleClass("activecontainer-group");
+    });
+
+    $("#web-development .btn-back").click(function() {
+        $(this).toggleClass("disabled-objects");
+        $(".container-group").toggleClass("disabled-objects");
+        $(".container-group").show();
+        $(".content").toggleClass("activecontent");
+        $(".container-group").toggleClass("activecontainer-group");
+        $(".btn-moreinfo").removeClass("disabled-objects");
+        $(this).show();
+    });
+
+/* Programming Course Information Toggle
+----------------*/
+
+    $("#programming-course .btn-moreinfo").click(function() {
+        $(this).toggleClass("disabled-objects");
+        $(".container-group").hide();
+        $("#programming-course.container-group").show();
+        $(".content").toggleClass("activecontent");
+        $(".container-group").toggleClass("activecontainer-group");
+    });
+
+    $("#programming-course .btn-back").click(function() {
+        $(this).toggleClass("disabled-objects");
+        $(".container-group").toggleClass("disabled-objects");
+        $(".container-group").show();
+        $(".content").toggleClass("activecontent");
+        $(".container-group").toggleClass("activecontainer-group");
+        $(".btn-moreinfo").removeClass("disabled-objects");
+        $(this).show();
+    });
+
+/* Finance Course Information Toggle
+----------------*/
+
+    $("#finance-course .btn-moreinfo").click(function() {
+        $(this).toggleClass("disabled-objects");
+        $(".container-group").hide();
+        $("#finance-course.container-group").show();
+        $(".content").toggleClass("activecontent");
+        $(".container-group").toggleClass("activecontainer-group");
+    });
+
+    $("#finance-course .btn-back").click(function() {
+        $(this).toggleClass("disabled-objects");
+        $(".container-group").toggleClass("disabled-objects");
+        $(".container-group").show();
+        $(".content").toggleClass("activecontent");
+        $(".container-group").toggleClass("activecontainer-group");
+        $(".btn-moreinfo").removeClass("disabled-objects");
+        $(this).show();
+    });
+
 });
