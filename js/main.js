@@ -57,6 +57,10 @@ $(document).ready(function() {
         window.open($(this).attr("href"), "_blank");
     });
 
+    $(".main-page").click(function() {
+        window.open($(this).attr("href"), "_blank");
+    });
+
     $(".btn-services").click(function() {
         $(".nav-item").removeClass("active");
         $(".section").hide();
@@ -65,7 +69,11 @@ $(document).ready(function() {
         $(".nav-item:eq(8)").addClass("active");
     });
 
-    $('.btn-wa').click(function() {
+    $(".btn-wa").click(function() {
+        window.open($(this).attr('href'));
+    });
+
+    $('.btn-calorie').click(function() {
         window.open($(this).attr('href'));
     });
 
@@ -138,5 +146,4 @@ $(document).ready(function() {
         $(".btn-moreinfo").removeClass("disabled-objects");
         $(this).show();
     });
-
 });
