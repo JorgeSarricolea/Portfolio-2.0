@@ -57,10 +57,6 @@ $(document).ready(function() {
         window.open($(this).attr("href"), "_blank");
     });
 
-    $(".main-page").click(function() {
-        window.open($(this).attr("href"), "_blank");
-    });
-
     $(".btn-services").click(function() {
         $(".nav-item").removeClass("active");
         $(".section").hide();
