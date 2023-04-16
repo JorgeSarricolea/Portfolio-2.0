@@ -73,6 +73,14 @@ $(document).ready(function() {
         window.open($(this).attr('href'));
     });
 
+    $('.btn-recipies').click(function() {
+        window.open($(this).attr('href'));
+    });
+
+    $('.btn-weatherapp').click(function() {
+        window.open($(this).attr('href'));
+    });
+
 /* Interests Links
 ----------------*/
 

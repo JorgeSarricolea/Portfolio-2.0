@@ -184,6 +184,7 @@
     color: #5D4780;
     padding: 10px 20px;
     margin-top: 20px;
+    transition: 0.3s ease;
 }
 
 #primary-btn:hover {
@@ -191,11 +192,13 @@
     border-color: #5D4780;
     color: #E8DAFF;
     font-weight: bold;
+    transition: 0.3s ease;
 }
 
 #primary-btn .disabled-objects {
     display: none;
     overflow: hidden;
+    transition: 0.3s ease;
 }
 
 #secondary-btn {
@@ -205,12 +208,14 @@
     color: #5D4780;
     padding: 10px 20px;
     margin-top: 20px;
+    transition: 0.3s ease;
 }
 
 #secondary-btn:hover {
     background-color: #5D4780;
     font-weight: bold;
     color: #E8DAFF;
+    transition: 0.3s ease;
 }
 
 #information {
@@ -277,11 +282,13 @@
 #home .social-links a {
     font-size: var(--iconSize);
     color: #B98EFF;
+    transition: 0.3s ease;
 }
 
 #home .social-links a:hover {
     font-size: var(--iconSize);
     color: #5D4780;
+    transition: 0.3s ease;
 }
 
 /* About Section
@@ -351,11 +358,6 @@
     gap: var(--generalGap);
 }
 
-#interests .container-group:hover {
-    background-color: #B98EFF;
-    cursor: pointer;
-}
-
 #interests .container-group {
     display: flex;
     flex-direction: row;
@@ -363,6 +365,13 @@
     background-color: rgba(116, 109, 128, 0.2);
     border-radius: 10px;
     padding: var(--generalPadding);
+    transition: 0.3s ease;
+}
+
+#interests .container-group:hover {
+    background-color: #B98EFF;
+    cursor: pointer;
+    transition: 0.3s ease;
 }
 
 /* Services Section
