@@ -93,6 +93,11 @@ $(document).ready(function() {
         window.open($(this).attr('href'));
     });
 
+    // Download my CV
+
+    $('.btn-cv').click(function() {
+        window.location.href = 'assets/SarricoleaVeyroJorge_CV.pdf';
+    });
 
 /* Interests Links
 ----------------*/

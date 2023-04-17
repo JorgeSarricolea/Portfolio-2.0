@@ -496,6 +496,62 @@
     transition: 0.3s ease;
 }
 
+/* Resume Section
+----------------*/
+
+#resume {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    gap: var(--generalGap);
+}
+
+#resume .column-containers {
+    display: flex;
+    flex-direction: row;
+    gap: var(--generalGap);
+    width: 100%;
+}
+
+#resume .container-group {
+    display: flex;
+    flex-direction: column;
+    background-color: rgba(116, 109, 128, 0.2);
+    border-radius: var(--containerRadius);
+    padding: var(--generalPadding);
+}
+
+#professional-xp {
+    gap: var(--generalGap);
+}
+
+#education {
+    gap: var(--generalGap);
+}
+
+.column-containers h1 {
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.column-containers h2 {
+    font-size: var(--h2_subtitles);
+    font-weight: bold;
+}
+
+.column-containers h3 {
+    font-size: var(--h3_biggerBody);
+    font-weight: bold;
+}
+
+.column-containers li {
+    font-size: var(--h3_normalBody);
+}
+
+.btn-cv {
+    width: 100%;
+}
+
 /* Responsive
 ----------------*/
 
@@ -583,6 +639,17 @@
 
     #portfolio .container-group {
         width: 100%;
+    }
+
+    .jumwork {
+        display: none;
+    }
+
+    /* Resume Section
+    ----------------*/
+
+    #resume {
+        flex-direction: column;
     }
 }
 
