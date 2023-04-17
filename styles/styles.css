@@ -467,6 +467,35 @@
     font-size: var(--h3_normalBody);
 }
 
+#portfolio .links {
+    margin-top: 10px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    gap: var(--generalGap);
+}
+
+.btn-jumwork {
+    margin-top: 20px;
+}
+
+#portfolio #primary-btn {
+    margin-top: 0;
+    width: 100%;
+}
+
+#portfolio i {
+    font-size: var(--iconSize);
+    color: #5D4780;
+    transition: 0.3s ease;
+}
+
+#portfolio i:hover {
+    color: #B98EFF;
+    transition: 0.3s ease;
+}
+
 /* Responsive
 ----------------*/
 

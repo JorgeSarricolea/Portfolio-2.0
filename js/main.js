@@ -69,7 +69,7 @@ $(document).ready(function() {
         window.open($(this).attr('href'));
     });
 
-    $('.btn-chatgpt').click(function() {
+    $('.btn-jumwork').click(function() {
         window.open($(this).attr('href'));
     });
 
