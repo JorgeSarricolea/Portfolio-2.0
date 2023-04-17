@@ -69,6 +69,10 @@ $(document).ready(function() {
         window.open($(this).attr('href'));
     });
 
+    $('.btn-chatgpt').click(function() {
+        window.open($(this).attr('href'));
+    });
+
     $('.btn-calorie').click(function() {
         window.open($(this).attr('href'));
     });
@@ -77,9 +81,18 @@ $(document).ready(function() {
         window.open($(this).attr('href'));
     });
 
+    $('.btn-joorge').click(function() {
+        window.open($(this).attr('href'));
+    });
+
     $('.btn-weatherapp').click(function() {
         window.open($(this).attr('href'));
     });
+
+    $('.btn-spotifyclon').click(function() {
+        window.open($(this).attr('href'));
+    });
+
 
 /* Interests Links
 ----------------*/
