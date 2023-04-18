@@ -423,7 +423,6 @@
 #services .activecontent {
     display: flex;
     flex-direction: column;
-
 }
 
 #services .disabled-objects {
@@ -434,20 +433,37 @@
 #services h2 {
     font-size: var(--h2_subtitles);
     font-weight: bold;
-    bottom: 10px;
 }
 
 #services h3 {
     font-size: var(--h3_normalBody);
 }
 
-#services .buttons-services {
+#services .btn-moreinfo {
+    display: flex;
     flex-direction: column;
-    gap: var(--generalGap);
+    align-items: end;
+    text-decoration: none;
+    margin-top: 20px;
 }
 
-#services #primary-btn {
-    margin-right: 20px;
+#services i {
+    color: #5D4780;
+    font-size: var(--iconSize);
+    cursor: pointer;
+}
+
+#services a {
+    color: #5D4780;
+}
+
+#services a:hover {
+    font-weight: bold;
+}
+
+#services .btn-back i {
+    margin-top: 20px;
+    text-decoration: none;
 }
 
 /* Portfolio Section
