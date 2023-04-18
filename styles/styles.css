@@ -552,6 +552,68 @@
     width: 100%;
 }
 
+/* Contact Section
+----------------*/
+
+#contact {
+    width: 40%;
+}
+
+#contact .container {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    padding: var(--generalPadding);
+    gap: var(--generalGap);
+}
+
+#form {
+    display: flex;
+    flex-direction: column;
+    gap: var(--generalGap);
+    width: 70%;
+}
+
+#contact h1 {
+    font-weight: bold;
+}
+
+label {
+    font-weight: bold;
+}
+
+input,
+textarea {
+    display: flex;
+    width: 100%;
+    padding: 10px;
+    border-radius: 10px;
+    opacity: 0.8;
+    border: 2px solid #5D4780;
+    background-color: #E8DAFF;
+}
+
+input:focus {
+    border-color: #B98EFF;
+}
+
+#contact .buttons {
+    display: flex;
+    flex-direction: column;
+    width: 70%;
+}
+
+#invisibleButton {
+    opacity: 0;
+    pointer-events: none;
+}
+
+#contact p {
+    color: #5D4780;
+    font-size: var(--h3_normalBody);
+    overflow: hidden;
+}
+
 /* Responsive
 ----------------*/
 
@@ -651,6 +713,22 @@
     #resume {
         flex-direction: column;
     }
+
+    /* Contact Section
+    ----------------*/
+
+    #contact {
+        width: 90%;
+    }
+
+    #form {
+        width: 100%;
+    }
+
+    #contact .buttons {
+        width: 100%;
+    }
+
 }
 
 @media only screen and (min-width: 1000px) {

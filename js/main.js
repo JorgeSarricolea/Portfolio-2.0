@@ -99,15 +99,15 @@ $(document).ready(function() {
         window.location.href = 'assets/SarricoleaVeyroJorge_CV.pdf';
     });
 
-/* Interests Links
-----------------*/
+    /* Interests Links
+    ----------------*/
 
     $('#interests .container-group').click(function() {
         window.open($(this).attr('href'));
     });
 
-/* Web Development Information Toggle
-----------------*/
+    /* Web Development Information Toggle
+    ----------------*/
 
     $("#web-development .btn-moreinfo").click(function() {
         $(this).toggleClass("disabled-objects");
@@ -127,8 +127,8 @@ $(document).ready(function() {
         $(this).show();
     });
 
-/* Programming Course Information Toggle
-----------------*/
+    /* Programming Course Information Toggle
+    ----------------*/
 
     $("#programming-course .btn-moreinfo").click(function() {
         $(this).toggleClass("disabled-objects");
@@ -148,8 +148,8 @@ $(document).ready(function() {
         $(this).show();
     });
 
-/* Finance Course Information Toggle
-----------------*/
+    /* Finance Course Information Toggle
+    ----------------*/
 
     $("#finance-course .btn-moreinfo").click(function() {
         $(this).toggleClass("disabled-objects");
@@ -167,5 +167,39 @@ $(document).ready(function() {
         $(".container-group").toggleClass("activecontainer-group");
         $(".btn-moreinfo").removeClass("disabled-objects");
         $(this).show();
+    });
+
+    /* Send Email Function
+    ----------------*/
+
+    $(".btn-mail").click(function() {
+
+        let emptyInputs = "Complete all the fields!";
+        let emailError = "The email address is not valid!";
+        let email = $('#email').val();
+
+        //Valid if inputs aren't empty
+        if ($('#name').val() != "" &&
+            $('#subject').val() != "" &&
+            $('#message').val() != "" &&
+            email.includes('@')) {
+                window.open(`mailto:jjorgesarricolea18@gmail.com?subject=${$('#subject').val()}&body=${$('#message').val()}`, "_blank");
+                $(".empty-inputs").hide();
+                $(".email-error").hide();
+        //Invalid email error
+        } else if (!email.includes('@')) {
+            $(".email-error").html(emailError);
+            $(".email-error").show();
+            setTimeout(function() {
+                $(".email-error").hide();
+            }, 3000);
+        } else {
+        //Empty inputs error
+            $(".empty-inputs").html(emptyInputs);
+            $(".empty-inputs").show();
+            setTimeout(function() {
+                $(".empty-inputs").hide();
+            }, 3000);
+        }
     });
 });
