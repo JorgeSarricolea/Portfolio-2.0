@@ -6,4 +6,5 @@ $(document).ready(function() {
     $(".btn-cv").click(function() {
         window.location.href = 'assets/SarricoleaVeyroJorge_CV.pdf';
     });
+
 });

@@ -1,5 +1,12 @@
 $(document).ready(function() {
 
+    /* Fucntion to send the user to a new tab
+    ----------------*/
+
+    $("#primary-btn").click(function() {
+        window.open($(this).attr("href"), "_blank");
+    });
+
     /* Web Development Information Toggle
     ----------------*/
 

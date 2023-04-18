@@ -10,20 +10,4 @@ $(document).ready(function() {
         $(".items-mobile").toggleClass("activeitems-mobile");
         $("#navbar").toggleClass("activenavbar");
     });
-
-    /* Fucntion to send the user to a new tab
-    ----------------*/
-
-    $("#primary-btn").click(function() {
-        window.open($(this).attr("href"), "_blank");
-    });
-
-    $("#secondary-btn").click(function() {
-        window.open($(this).attr("href"), "_blank");
-    });
-
-    $(".btn-cv").click(function(event) {
-        event.preventDefault();
-        window.location.href = 'assets/SarricoleaVeyroJorge_CV.pdf';
-    });
 });
