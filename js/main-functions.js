@@ -21,4 +21,9 @@ $(document).ready(function() {
     $("#secondary-btn").click(function() {
         window.open($(this).attr("href"), "_blank");
     });
+
+    $(".btn-cv").click(function(event) {
+        event.preventDefault();
+        window.location.href = 'assets/SarricoleaVeyroJorge_CV.pdf';
+    });
 });

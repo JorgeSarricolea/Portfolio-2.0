@@ -1,6 +1,6 @@
 $(document).ready(function() {
 
-        /* Buttons of the projects
+    /* Buttons of the projects
     ----------------*/
 
     $('.btn-jumwork').click(function() {
