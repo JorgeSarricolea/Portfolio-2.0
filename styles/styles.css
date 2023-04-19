@@ -693,9 +693,6 @@ input:focus {
         font-size: var(--h1_subtitles);
     }
 
-    #home .whoami {
-        height: 120px;
-    }
     #home .container img {
         border-radius: var(--containerRadius);
     }
