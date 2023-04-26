@@ -75,4 +75,27 @@ $(document).ready(function() {
         $(".btn-moreinfo").removeClass("disabled-objects");
         $(this).show();
     });
+
+    /* Programming Course Information Toggle
+    ----------------*/
+
+    $("#webpage-course .btn-moreinfo").click(function() {
+        $(this).toggleClass("disabled-objects");
+        $(".btn-moreinfo").hide();
+        $(".container-group").hide();
+        $("#webpage-course.container-group").show();
+        $(".content").toggleClass("activecontent");
+        $(".container-group").toggleClass("activecontainer-group");
+    });
+
+    $("#webpage-course .btn-back").click(function() {
+        $(this).toggleClass("disabled-objects");
+        $(".btn-moreinfo").show();
+        $(".container-group").toggleClass("disabled-objects");
+        $(".container-group").show();
+        $(".content").toggleClass("activecontent");
+        $(".container-group").toggleClass("activecontainer-group");
+        $(".btn-moreinfo").removeClass("disabled-objects");
+        $(this).show();
+    });
 });

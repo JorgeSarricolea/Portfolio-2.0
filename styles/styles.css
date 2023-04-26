@@ -396,6 +396,12 @@
 /* Services Section
 ----------------*/
 
+#information {
+    display: flex;
+    flex-direction: column;
+    gap: var(--generalGap);
+}
+
 #services .rows-containers {
     display: flex;
     flex-direction: row;
