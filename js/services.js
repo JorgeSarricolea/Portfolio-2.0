@@ -10,7 +10,7 @@ $(document).ready(function() {
     /* Web Development Information Toggle
     ----------------*/
 
-    $("#web-development .btn-moreinfo").click(function() {
+    $("#web-development .btn-moreinfo").click(function () {
         $(this).toggleClass("disabled-objects");
         $(".btn-moreinfo").hide();
         $(".container-group").hide();
