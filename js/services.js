@@ -1,14 +1,14 @@
-$(document).ready(function() {
+$(document).ready(function () {
 
     /* Fucntion to send the user to a new tab
     ----------------*/
 
-    $("#primary-btn").click(function() {
+    $("#primary-btn").click(function () {
         window.open($(this).attr("href"), "_blank");
     });
 
     /* Web Development Information Toggle
-    ----------------*/
+    ----------------
 
     $("#web-development .btn-moreinfo").click(function () {
         $(this).toggleClass("disabled-objects");
@@ -31,7 +31,7 @@ $(document).ready(function() {
     });
 
     /* Programming Course Information Toggle
-    ----------------*/
+    ----------------
 
     $("#programming-course .btn-moreinfo").click(function() {
         $(this).toggleClass("disabled-objects");
@@ -54,7 +54,7 @@ $(document).ready(function() {
     });
 
     /* Finance Course Information Toggle
-    ----------------*/
+    ----------------
 
     $("#finance-course .btn-moreinfo").click(function() {
         $(this).toggleClass("disabled-objects");
@@ -77,7 +77,7 @@ $(document).ready(function() {
     });
 
     /* Programming Course Information Toggle
-    ----------------*/
+    ----------------
 
     $("#webpage-course .btn-moreinfo").click(function() {
         $(this).toggleClass("disabled-objects");
@@ -97,5 +97,5 @@ $(document).ready(function() {
         $(".container-group").toggleClass("activecontainer-group");
         $(".btn-moreinfo").removeClass("disabled-objects");
         $(this).show();
-    });
+    });*/
 });

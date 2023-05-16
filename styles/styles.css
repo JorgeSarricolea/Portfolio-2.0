@@ -75,7 +75,7 @@
 
 }
 
-.bars-menu{
+.bars-menu {
     width: 30px;
     height: 30px;
     cursor: pointer;
@@ -89,7 +89,8 @@
     margin-top: 6px;
     transform-origin: 0px 100%;
     transition: all 300ms;
-    border-radius: 5px;;
+    border-radius: 5px;
+    ;
 }
 
 .activeline1-bars-menu {
@@ -472,6 +473,85 @@
     text-decoration: none;
 }
 
+#information-about {
+    display: flex;
+    flex-direction: column;
+    margin-top: 40px;
+    width: 80%;
+    gap: var(--generalGap);
+    padding: var(--generalPadding);
+    margin-bottom: 60px;
+}
+
+#information-about .content {
+    display: flex;
+    flex-direction: row;
+    gap: var(--generalGap);
+}
+
+#information-about h3 {
+    font-size: var(--h3_normalBody);
+}
+
+#information-about a {
+    align-self: flex-end;
+    color: #5D4780;
+}
+
+#information-about a:hover {
+    font-weight: bold;
+}
+
+/* Carousel
+----------------*/
+
+#container-carousel {
+    align-self: center;
+}
+
+#carousel {
+    width: 400px;
+    height: 400px;
+    overflow: hidden;
+    position: relative;
+    border-radius: 20px;
+}
+
+#carousel img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: none;
+    height: 100%;
+    transition: opacity 0.5s ease-in-out;
+}
+
+#carousel img:first-child {
+    display: block;
+}
+
+#carousel button {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(116, 109, 128, 0.5);
+    color: #E8DAFF;
+    border: none;
+    font-size: 24px;
+    padding: 8px;
+    cursor: pointer;
+}
+
+#prev {
+    left: 10px;
+    border-radius: 100px;
+}
+
+#next {
+    right: 10px;
+    border-radius: 100px;
+}
+
 /* Portfolio Section
 ----------------*/
 
@@ -727,6 +807,28 @@ input:focus {
     }
 
     #services .container-group {
+        width: 100%;
+    }
+
+    #carousel {
+        width: 300px;
+        height: 200px;
+    }
+
+    #carousel img {
+        height: fit-content;
+    }
+
+    #information-about {
+        width: 90%;
+    }
+
+    #information-about .content {
+        flex-direction: column;
+        width: 100%;
+    }
+
+    #information-about img {
         width: 100%;
     }
 
