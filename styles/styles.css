@@ -621,6 +621,19 @@
   transition: 0.3s ease;
 }
 
+#portfolio .rows-containers a img {
+  width: 100%;
+  margin: 0 0 20px 0;
+  border-radius: var(--buttonsRadius);
+  transition: transform 0.3s ease;
+  filter: brightness(80%);
+}
+
+#portfolio .rows-containers a img:hover {
+  transform: scale(1.03);
+  filter: brightness(100%);
+}
+
 /* Resume Section
 ----------------*/
 
