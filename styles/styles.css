@@ -731,6 +731,7 @@
 
 #resume .column-containers {
   display: flex;
+  margin: 0 auto;
   flex-direction: row;
   gap: var(--generalGap);
   width: 100%;
@@ -742,6 +743,13 @@
   background-color: rgba(116, 109, 128, 0.2);
   border-radius: var(--containerRadius);
   padding: var(--generalPadding);
+}
+
+#resume .large-separator {
+  width: 57%;
+  background-color: #5d4780;
+  height: 3px;
+  border-radius: var(--buttonsRadius);
 }
 
 #professional-xp {
