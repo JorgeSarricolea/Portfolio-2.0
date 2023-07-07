@@ -422,7 +422,7 @@
 ----------------*/
 
 #information {
-  display: flex;
+  display: block;
   gap: var(--generalGap);
 }
 
@@ -458,6 +458,10 @@
 #services .disabled-objects {
   display: none;
   overflow: hidden;
+}
+
+#services h1 {
+  font-weight: bold;
 }
 
 #services h2 {
@@ -537,6 +541,7 @@
   flex-direction: column;
   justify-content: space-between;
   gap: var(--generalGap);
+  width: 100%;
 }
 
 #courses .container-group {
@@ -544,11 +549,12 @@
   background-color: rgba(116, 109, 128, 0.2);
   border-radius: 10px;
   padding: var(--generalPadding);
+  width: 100%;
 }
 
 #courses .container-group a {
   color: #5d4780;
-  align-self: last baseline;
+  align-self: flex-end;
 }
 
 #courses h1 {
@@ -565,11 +571,22 @@
   font-size: var(--h3_normalBody);
 }
 
-#courses img {
-  width: 15%;
+#courses .rows-containers a img {
+  width: 200px;
   border-radius: var(--buttonsRadius);
-  object-fit: cover;
+  transition: transform 0.3s ease;
+  filter: brightness(80%);
   margin-right: 20px;
+  object-fit: cover;
+}
+
+#courses .rows-containers a img:hover {
+  transform: scale(1.03);
+  filter: brightness(100%);
+}
+
+#courses i {
+  align-self: last baseline;
 }
 
 /* Carousel
@@ -624,7 +641,7 @@
 ----------------*/
 
 #portfolio .container {
-  display: flex;
+  display: block;
   flex-direction: column;
   justify-content: space-between;
   gap: var(--generalGap);
@@ -644,6 +661,10 @@
   background-color: rgba(116, 109, 128, 0.2);
   border-radius: 10px;
   padding: var(--generalPadding);
+}
+
+#portfolio h1 {
+  font-weight: bold;
 }
 
 #portfolio h2 {
