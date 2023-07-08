@@ -11,7 +11,7 @@ $(document).ready(function () {
   });
 
   /* Multilanguaje swith
-    ----------------*/
+    ----------------
 
   const flagsElement = $("#flags");
   const textsToChange = $("[data-section]");
