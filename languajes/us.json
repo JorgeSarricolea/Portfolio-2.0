@@ -1,0 +1,10 @@
+{
+  "navbar": {
+    "option1": "HOME",
+    "option2": "ABOUT",
+    "option3": "SERVICES",
+    "option4": "PORTFOLIO",
+    "option5": "RESUME",
+    "option6": "CONTACT"
+  }
+}

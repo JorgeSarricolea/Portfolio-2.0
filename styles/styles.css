@@ -192,6 +192,33 @@
   font-weight: bold;
 }
 
+#flags {
+  width: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.flag-item {
+  width: 20px;
+  transition: transform 0.3s ease;
+  cursor: pointer;
+}
+
+.flag-item:hover {
+  transform: scale(1.03);
+}
+
+.flag-item .flag-item-text {
+  display: none;
+}
+
+.flag-item:hover .flag-item-text {
+  display: flex;
+  flex-direction: row;
+  font-size: smaller;
+}
+
 /* General Styles Section
 ----------------*/
 
